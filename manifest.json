@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "Bellwether",
+  "version": "0.1",
+  "description": "Example app, puts red border on certain sites",
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.notapplicablerobin.com/*","*://*.narobin.com/*","*://narobin.com/*"],
+      "js": ["borderify.js"]
+    }
+  ]
+}
